@@ -1,0 +1,33 @@
+@import './css/fonts.scss';
+@import './css/vars.scss';
+@import './css/blocks/container.scss';
+@import './css/blocks/header.scss';
+@import './css/blocks/info.scss';
+@import './css/blocks/controls.scss';
+@import './css/blocks/button.scss';
+@import './css/blocks/icon.scss';
+@import './css/blocks/vechicles.scss';
+@import './css/blocks/pagination.scss';
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    font-family: "DM Sans";
+    font-weight: 500;
+}
+
+h1 {
+    margin: 0;
+}
+
+.app {
+    height: 100%;
+}

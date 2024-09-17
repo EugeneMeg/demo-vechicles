@@ -1,0 +1,25 @@
+.button {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 9px 18px;
+    border-radius: 10px;
+    border: none;
+    font-family: inherit;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: var(--t2);
+    white-space: nowrap;
+
+    &--red {
+        background-color: var(--primary-red);
+        color: var(--white);
+
+        &:hover {
+            background-color: var(--secondary-light-red);
+        }
+    }
+}

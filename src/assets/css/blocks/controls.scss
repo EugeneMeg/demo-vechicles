@@ -1,0 +1,103 @@
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    padding: 36px 0 0;
+    margin: 0 0 32px;
+
+    &__search {
+        display: flex;
+        align-items: center;
+        gap: 43px;
+        padding: 9px 16px;
+        border-radius: 8px;
+        border: 1px solid var(--line-grey);
+        font-weight: 400;
+
+        &:after {
+            content: "";
+            display: block;
+            width: 24px;
+            height: 24px;
+            background-image: url("../../icons/zoom.svg");
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    }
+
+    &__search-input {
+        padding: 0;
+        margin: 0;
+        height: 24px;
+        font-family: inherit;
+        font-size: 16px;
+        line-height: 22px;
+        resize: none;
+        outline: none;
+        border: none;
+        white-space: nowrap;
+    }
+
+    &__count {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    &__count-selector {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 9px 16px;
+        border-radius: 8px;
+        border: 1px solid var(--line-grey);
+        cursor: pointer;
+
+        &:after {
+            content: "";
+            display: block;
+            width: 24px;
+            height: 24px;
+            background-image: url("../../icons/arrow.svg");
+            background-repeat: no-repeat;
+            background-size: contain;
+            transition: var(--t2);
+        }
+
+        &--active {
+            &:after {
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    &__count-list {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 8px;
+        background-color: var(--white);
+        border-radius: 6px;
+        box-shadow: 0 -2px 20px rgba(74,74,74,0.10);
+    }
+
+    &__count-item {
+        padding: 4px;
+        border-radius: 6px;
+        transition: var(--t2);
+
+        &:hover {
+            background-color: var(--secondary-light-red);
+            color: var(--white);
+        }
+    }
+
+    &__button {
+        margin-left: auto;
+    }
+}

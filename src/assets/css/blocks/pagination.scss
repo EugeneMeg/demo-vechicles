@@ -1,0 +1,72 @@
+.pagination {
+    &__in {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 0 50px;
+    }
+
+    &__info {
+        font-size: 16px;
+        font-weight: 400;
+        color: var(--text-dark-grey);
+    }
+
+    &__pagination {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-size: 13px;
+        color: var(--text-dark-grey);
+    }
+
+    &__button {
+        width: 24px;
+        height: 24px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: transparent;
+        background-image: url("../../icons/arrow.svg");
+        border: none;
+        cursor: pointer;
+
+        &:disabled {
+            opacity: 0.5;
+            cursor: default;
+        }
+
+        &--prev {
+
+            transform: rotate(90deg);
+        }
+
+        &--next {
+            transform: rotate(-90deg);
+        }
+    }
+
+    &__input-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
+        font-size: 15px;
+        line-height: 22px;
+        font-weight: 400;
+        color: var(--text-dark-grey);
+        border-radius: 6px;
+        border: 1px solid var(--line-grey);
+    }
+
+    &__input {
+        width: 10px;
+        border: none;
+        outline: none;
+        font-family: inherit;
+
+        &:disabled {
+            color: var(--text-light-grey);
+        }
+    }
+}

@@ -1,0 +1,10 @@
+.icon {
+    display: flex;
+    align-items: center;
+
+    &--white {
+        & svg {
+            fill: var(--white);
+        }
+    }
+}
